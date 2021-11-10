@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <h1>WebSocket Chat App</h1>
+            <div class="chat" id="chat">
+            </div>
+            
+            <div class="input">
+                <div class="input-container">
+                    <input type="text" placeholder="Type here..."/>
+                </div>
+                <button class="send">Send</button>
+            </div>
+        </div>
+
+        <template id="template-message">
+            <div class="message">
+                <p class="message-name">Hello</p>
+                <h2 class="message-text"></h2>
+            </div>
+        </template>
+        <template id="template-info">
+            <p class="info">You joined the Chat</p>
+        </template>
+
+        <script src="chat.js"></script>
+    </body>
+</html>
